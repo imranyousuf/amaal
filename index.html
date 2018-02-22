@@ -46,7 +46,6 @@
         background-color: #0d56c9;
         color:white;
         border-radius: 4px;
-        cursor: pointer;
         display: inline-block;
         font-size: .9em;
         height: 35px;
@@ -55,13 +54,48 @@
         transition: all 250ms;;
         float: right;
 
-
     }
+
+    #headerMenus{
+        float: left;
+        list-style: none;
+        display: inline;
+    }
+
+   ul{
+       list-style-type: none;
+       margin: 0;
+       padding: 0;
+       overflow: hidden;
+   }
+
+    li{
+        float: left;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        margin-left: 15px;
+        margin-top: 10px;
+        color:white;
+        background-color: #0d56c9;
+        box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    }
+
+    li a:hover {
+        background-color: white;
+        color: #0d56c9;
+    }
+
+
 
 
 </style>
 
 <body>
+
 
      <div id="header">
 
@@ -73,15 +107,21 @@
              </div>
          </div>
 
+         <div id="headerMenus">
+             <ul>
+                 <li><a href="">Products</a></li>
+                 <li><a href="">Pricing</a></li>
+                 <li><a href="">Customer</a></li>
+             </ul>
+         </div>
+
              <button id="trialButton">
                  TRY NOW
              </button>
 
-
-
-
-
      </div>
+
+
 
 
 </body>
@@ -92,6 +132,10 @@
 </body>
 
 <script>
+
+    $('#trialButton').click(function () {
+        alert("Islam");
+    });
 
 </script>
 
